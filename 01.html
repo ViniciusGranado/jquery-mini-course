@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        $("#btnSoma").click(() => {
+          const v1 = parseInt($("#f_v1").val());
+          const v2 = parseInt($("#f_v2").val());
+
+          const soma = v1 + v2;
+
+          $("#res").text(soma);
+        })
+      })
+    </script>
+  </head>
+
+  <body>
+    <div id="f_calc">
+      <label for="">Valor 1</label>
+      <input type="text" id="f_v1" value='0'> <br>
+
+      <label for="">Valor 2</label>
+      <input type="text" id="f_v2" value='0'> <br>
+
+      <button id='btnSoma'>SOMAR</button>
+
+      <div id="res"></div>
+    </div>
+  </body>
+</html>
